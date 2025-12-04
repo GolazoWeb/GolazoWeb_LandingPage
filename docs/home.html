@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GolazoWeb</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="assets/styles/home.css">
+  <link rel="stylesheet" href="assets/styles/SubirVideo.css">
+  <link rel="stylesheet" href="assets/styles/Deportistas.css">
+  <link rel="stylesheet" href="assets/styles/publicaciones.css">
+  <link rel="stylesheet" href="assets/styles/Notificaciones.css">
+</head>
+<body>
+
+  <!-- LEFT SIDEBAR / HEADER -->
+  <aside class="sidebar" role="navigation" aria-label="Navegación principal">
+    <a class="brand" href="#" title="GolazoWEB">
+      <img src="assets/images/logo.jpg" alt="Logo GolazoWEB">
+      <span class="brand-text">GolazoWeb</span>
+    </a>
+
+    <nav class="side-nav">
+      <button class="nav-btn active" data-section="inicio" title="Inicio">
+        <i class="fas fa-home"></i><span>Inicio</span>
+      </button>
+      <button class="nav-btn" data-section="subir" title="Subir Video">
+        <i class="fas fa-cloud-upload-alt"></i><span>Subir Video</span>
+      </button>
+      <button class="nav-btn" data-section="deportistas" title="Ver Deportistas">
+        <i class="fas fa-users"></i><span>Ver Deportistas</span>
+      </button>
+      <button class="nav-btn" data-section="publicaciones" title="Mis Publicaciones">
+        <i class="fas fa-clipboard-list"></i><span>Mis Publicaciones</span>
+      </button>
+      <button class="nav-btn" data-section="notificaciones" title="Notificaciones">
+        <i class="fas fa-bell"></i><span>Notificaciones</span>
+        <span id="notiBadge" class="noti-badge" aria-hidden="true"></span>
+      </button>
+      <button class="nav-btn" data-section="perfil" title="Mi Perfil">
+        <i class="fas fa-user"></i><span>Mi Perfil</span>
+      </button>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-area">
+    <!-- topbar for mobile or smaller screens -->
+    <header class="topbar-mobile">
+      <div class="brand-mobile">
+        <img src="assets/images/logo.png" alt="Logo">
+        <h1>GolazoWeb</h1>
+      </div>
+      <div class="right-controls">
+        <button id="mobileMenuToggle" class="icon-btn"><i class="fas fa-bars"></i></button>
+      </div>
+    </header>
+
+    <div class="container">
+
+      <!-- INICIO -->
+      <section id="inicio" class="app-section active" aria-labelledby="title-inicio">
+        <div class="hero">
+          <div class="hero-header">
+            <h2 id="title-inicio">Top 5 Deportistas de la semana</h2>
+            <p class="subtitle">Los más validados por la comunidad</p>
+          </div>
+
+          <div id="playersContainer" class="players-list">
+            <!-- Deportista 1 -->
+            <div class="player-card">
+              <img src="assets/images/Juan.jpg" alt="Juan Pérez">
+              <div class="player-info">
+                <h4>Juan Pérez</h4>
+                <span class="validation-badge">120 validaciones</span>
+              </div>
+            </div>
+            <!-- Deportista 2 -->
+            <div class="player-card">
+              <img src="assets/images/mateo.webp" alt="Carlos Díaz">
+              <div class="player-info">
+                <h4>Mateo Díaz</h4>
+                <span class="validation-badge">98 validaciones</span>
+              </div>
+            </div>
+            <!-- Deportista 3 -->
+            <div class="player-card">
+              <img src="assets/images/mario.avif" alt="Mario Silva">
+              <div class="player-info">
+                <h4>Mario Silva</h4>
+                <span class="validation-badge">87 validaciones</span>
+              </div>
+            </div>
+            <!-- Deportista 4 -->
+            <div class="player-card">
+              <img src="assets/images/luisa.webp" alt="Luis Mendoza">
+              <div class="player-info">
+                <h4>Luisa Mendoza</h4>
+                <span class="validation-badge">75 validaciones</span>
+              </div>
+            </div>
+            <!-- Deportista 5 -->
+            <div class="player-card">
+              <img src="assets/images/pedrito.avif" alt="Pedro Rojas">
+              <div class="player-info">
+                <h4>Pedro Rojas</h4>
+                <span class="validation-badge">66 validaciones</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RECOMENDACIONES PARA TI -->
+          <div class="recommendations">
+            <h3>Recomendaciones para ti</h3>
+            <div id="recommendationsList" class="videos-grid">
+              <!-- CARD 1 -->
+              <div class="recommend-card">
+                <img src="assets/images/resistencia.jpg" alt="Entrenamiento de resistencia" />
+                <h4>Entrenamiento de resistencia</h4>
+                <div class="recommend-meta">
+                  <img src="assets/images/carlos.jpg" class="uploader-pic" alt="Carlos">
+                  <span>Subido por <strong>Carlos Torres</strong></span>
+                </div>
+                <div class="recommend-actions">
+                  <div class="validation-box">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>12 validaciones</span>
+                  </div>
+                  <button class="btn-like">
+                    <i class="fas fa-thumbs-up"></i>
+                    Me gusta
+                  </button>
+                </div>
+              </div>
+              <!-- CARD 2 -->
+              <div class="recommend-card">
+                <img src="assets/images/salto.webp" alt="Técnica de salto vertical" />
+                <h4>Técnica de salto vertical</h4>
+                <div class="recommend-meta">
+                  <img src="assets/images/mario.avif" class="uploader-pic" alt="Mario">
+                  <span>Subido por <strong>Mario López</strong></span>
+                </div>
+                <div class="recommend-actions">
+                  <div class="validation-box">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>8 validaciones</span>
+                  </div>
+                  <button class="btn-like">
+                    <i class="fas fa-thumbs-up"></i>
+                    Me gusta
+                  </button>
+                </div>
+              </div>
+              <!-- CARD 3 -->
+              <div class="recommend-card">
+                <img src="assets/images/controlbalon.png" alt="Control de balón avanzado" />
+                <h4>Control de balón avanzado</h4>
+                <div class="recommend-meta">
+                  <img src="assets/images/pedro.webp" class="uploader-pic" alt="Pedro">
+                  <span>Subido por <strong>Pedro Aguilar</strong></span>
+                </div>
+                <div class="recommend-actions">
+                  <div class="validation-box">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>23 validaciones</span>
+                  </div>
+                  <button class="btn-like">
+                    <i class="fas fa-thumbs-up"></i>
+                    Me gusta
+                  </button>
+                </div>
+              </div>
+              <!-- CARD 4 -->
+              <div class="recommend-card">
+                <img src="assets/images/agilidad.jpeg" alt="Rutina de agilidad profesional" />
+                <h4>Rutina de agilidad profesional</h4>
+                <div class="recommend-meta">
+                  <img src="assets/images/Lucas.webp" class="uploader-pic" alt="Lucas">
+                  <span>Subido por <strong>Lucas Herrera</strong></span>
+                </div>
+                <div class="recommend-actions">
+                  <div class="validation-box">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>15 validaciones</span>
+                  </div>
+                  <button class="btn-like">
+                    <i class="fas fa-thumbs-up"></i>
+                    Me gusta
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- ==============================
+     SECCIÓN SUBIR VIDEO
+============================== -->
+<section id="subir" class="app-section" aria-labelledby="title-subir">
+  <h2 id="title-subir">Sube una publicación</h2>
+
+  <form id="uploadForm" class="upload-form" novalidate>
+    <label for="titulo">Ubicación</label>
+    <input type="text" id="titulo" autocomplete="off">
+    <span class="error-msg" id="errorUbicacion"></span>
+
+    <label for="fecha">Fecha</label>
+    <input type="date" id="fecha">
+    <span class="error-msg" id="errorFecha"></span>
+
+    <label for="descripcion">Descripción</label>
+    <textarea id="descripcion" rows="4" placeholder="Describe lo que sucede y sugiere una ruta alternativa si es posible"></textarea>
+    <span class="error-msg" id="errorDescripcion"></span>
+
+    <label for="archivo">Sube fotos/videos</label>
+    <input type="file" id="archivo" accept="image/*,video/*">
+    <span class="error-msg" id="errorArchivo"></span>
+
+    <div class="actions">
+      <button type="submit" class="btn primary">Publicar</button>
+    </div>
+  </form>
+</section>
+
+<!-- ==============================
+     MODAL DE CONFIRMACIÓN
+============================== -->
+<div id="uploadModal" class="modal">
+  <div class="modal-content">
+    <h3>Confirma tu video</h3>
+    <div id="uploadSummaryContent" style="display:none;">
+      <p><strong>Ubicación:</strong> <span id="summaryUbicacion"></span></p>
+      <p><strong>Fecha:</strong> <span id="summaryFecha"></span></p>
+      <p><strong>Descripción:</strong> <span id="summaryDescripcion"></span></p>
+      <p><strong>Archivo:</strong></p>
+      <video id="summaryThumb" controls style="max-width:100%; border-radius:8px; margin-top:6px; display:none;"></video>
+      <img id="summaryImage" style="max-width:100%; border-radius:8px; margin-top:6px; display:none;" alt="Archivo">
+    </div>
+    <div class="modal-actions">
+      <button id="uploadModalConfirmBtn" class="btn confirm">Publicar</button>
+      <button id="uploadModalCancelBtn" class="btn cancel">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+      <!-- VER DEPORTISTAS -->
+      <section id="deportistas" class="app-section" aria-labelledby="title-deportistas">
+        <h2 id="title-deportistas">Ver jugadores</h2>
+        <div id="videosDeportistas" class="videos-grid" aria-live="polite"></div>
+        <!-- MODAL DE PERFIL DE DEPORTISTA -->
+<div id="perfilModal" class="custom-modal">
+  <div class="modal-content">
+    <span id="closePerfilModal" class="close-btn">&times;</span>
+    <h3 id="perfilNombre">Nombre Deportista</h3>
+    <img id="perfilFoto" src="" alt="Foto Deportista" class="perfil-img">
+    <div class="perfil-info">
+      <p><strong>Peso:</strong> <span id="perfilPeso"></span> kg</p>
+      <p><strong>Edad:</strong> <span id="perfilEdad"></span> años</p>
+      <p><strong>Publicaciones:</strong> <span id="perfilPublicaciones"></span></p>
+      <p><strong>Validaciones:</strong> <span id="perfilValidaciones"></span></p>
+    </div>
+    <div class="modal-actions">
+      <button id="cerrarPerfilBtn" class="btn-action">Cerrar</button>
+    </div>
+  </div>
+</div>
+      </section>
+
+      <!-- MIS PUBLICACIONES -->
+      <section id="publicaciones" class="app-section" aria-labelledby="title-publicaciones">
+        <h2 id="title-publicaciones">Mis Publicaciones</h2>
+
+        <div class="filter-row">
+          <input id="buscarMiVideo" class="search-input" type="text" placeholder="Buscar por título...">
+          <input id="filtrarFecha" type="date" title="Filtrar por fecha">
+        </div>
+
+        <div id="misVideos" class="videos-grid"></div>
+        <div id="deleteModal" class="modal">
+  <div class="modal-content">
+    <p>¿Deseas eliminar esta publicación?</p>
+    <div class="modal-actions">
+      <button id="deleteConfirmBtn" class="btn confirm">Eliminar</button>
+      <button id="deleteCancelBtn" class="btn cancel">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+      </section>
+
+      <!-- NOTIFICACIONES -->
+<section id="notificaciones" class="app-section" aria-labelledby="title-notificaciones">
+  <h2 id="title-notificaciones">Notificaciones</h2>
+  <ul class="noti-list" aria-live="polite">
+    <li>
+      <div>Tu video "Entrenamiento AE" ha sido subido correctamente.</div>
+      <button class="mark-btn">Marcar</button>
+    </li>
+    <li>
+      <div>El entrenador Juan Pérez ha aceptado tu solicitud de contacto.</div>
+      <button class="mark-btn">Marcar</button>
+    </li>
+    <li>
+      <div>María reaccionó a tu video "Entrenamiento AE".</div>
+      <button class="mark-btn">Marcar</button>
+    </li>
+    <li>
+      <div>Carlos comentó en tu video "Entrenamiento AE": "¡Excelente trabajo!"</div>
+      <button class="mark-btn">Marcar</button>
+    </li>
+    <li>
+      <div>Video subido: Fútbol 3x3</div>
+      <button class="mark-btn">Marcar</button>
+    </li>
+    <li>
+      <div>Video subido: Técnica de dribbling</div>
+      <button class="mark-btn">Marcar</button>
+    </li>
+    <li>
+      <div>El entrenador Ana Gómez ha aceptado tu solicitud.</div>
+      <button class="mark-btn">Marcar</button>
+    </li>
+    <li>
+      <div>Tu video "Tiro libre" ha sido subido correctamente.</div>
+      <button class="mark-btn">Marcar</button>
+    </li>
+  </ul>
+</section>
+
+      <!-- PERFIL-->
+<section id="perfil" class="app-section" aria-labelledby="title-perfil">
+  <h2 id="title-perfil" style="text-align:center; margin-bottom:20px;">Mi Perfil</h2>
+
+  <div class="profile-card" style="display:flex; flex-direction:column; align-items:center; background:#fff; padding:25px; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.1); max-width:500px; margin:0 auto; gap:16px;">
+    
+    <!-- Avatar -->
+    <img class="avatar" src="assets/images/carlos.jpg" alt="Avatar usuario" style="width:150px; height:150px; border-radius:50%; border:3px solid #4CAF50;">
+
+    <!-- Información principal -->
+    <div class="profile-info" style="text-align:center;">
+      <p style="font-size:1.3rem; margin:6px 0;"><strong>Nombre:</strong> Fernando Sanchez</p>
+      <p style="font-size:1rem; margin:6px 0;"><strong>Descripción:</strong> <span id="perfilDescripcion">Apasionado del deporte y fanático de los entrenamientos funcionales. Siempre buscando mejorar mis habilidades y compartir mis experiencias.</span></p>
+      <p style="font-size:1rem; margin:6px 0;"><strong>Videos subidos:</strong> <span id="countVideos">5</span></p>
+      <p style="font-size:1rem; margin:6px 0;"><strong>Validaciones:</strong> <span id="countValidaciones">3</span></p>
+    </div>
+
+    <!-- Estadísticas y logros -->
+    <div class="profile-stats" style="background:#f5f7f8; padding:16px; border-radius:12px; width:100%; display:flex; flex-direction:column; gap:10px;">
+      <p><strong>Estadísticas y logros:</strong></p>
+      <p>• Total de horas entrenadas este mes: 24h</p>
+      <p>• Mejor marca personal en sprint: 12.5s</p>
+      <p>• Último logro desbloqueado: “Entrenamiento Avanzado de Resistencia”</p>
+      <p>• Videos más vistos: 2</p>
+    </div>
+
+    <!-- Botones de acción -->
+    <div class="profile-actions" style="margin-top:10px; display:flex; flex-direction:column; gap:12px; width:100%;">
+      <button style="padding:12px 0; border:none; border-radius:8px; background:#4CAF50; color:#fff; cursor:pointer; font-weight:600;">Editar Perfil</button>
+      <button 
+        style="padding:12px 0; border:none; border-radius:8px; background:#ff4d4d; color:#fff; cursor:pointer; font-weight:600;"
+        onclick="window.location.href='index.html'">
+        Cerrar Sesión
+      </button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- JS -->
+  <script src="assets/scripts/home.js"></script>
+  <script src="assets/scripts/SubirVideo.js"></script>
+    <script src="assets/scripts/deportista.js"></script>
+    <script src="assets/scripts/publicaciones.js"></script>
+    <script src="assets/scripts/notificacion.js"></script>
+</body>
+</html>
