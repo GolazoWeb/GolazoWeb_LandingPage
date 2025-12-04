@@ -1,0 +1,121 @@
+/* ==============================
+   SECCIÓN MIS PUBLICACIONES
+============================== */
+#publicaciones {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Título */
+#publicaciones h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #333;
+  text-align: left;
+}
+
+/* Filtros */
+#publicaciones .filter-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+#publicaciones .filter-row input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  flex: 1;
+  max-width: 250px;
+}
+
+/* Contenedor de videos */
+#misVideos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Tarjeta de video o imagen */
+#misVideos .video-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#misVideos .video-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* Video o imagen */
+#misVideos .video-card video,
+#misVideos .video-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Información del video */
+#misVideos .video-info {
+  padding: 12px 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+#misVideos .video-info p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+#misVideos .video-info p strong {
+  color: #333;
+}
+
+/* Botón eliminar */
+#misVideos .video-card .btn.ghost.small {
+  margin: 10px 15px 15px;
+  padding: 8px 0;
+  border-radius: 8px;
+  background-color: #ff4d4d;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#misVideos .video-card .btn.ghost.small:hover {
+  background-color: #e60000;
+}
+
+/* ==============================
+   VALIDACIONES PARA PUBLICACIONES
+============================== */
+#misVideos .error-msg {
+  color: #ff4d4d;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Mensaje de validación general */
+#misVideos .validation-summary {
+  background-color: #fff3f3;
+  border: 1px solid #ff4d4d;
+  color: #e60000;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
