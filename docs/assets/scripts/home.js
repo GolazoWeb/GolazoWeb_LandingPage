@@ -1,9 +1,7 @@
-// ----- Navegación (sidebar) -----
 const navButtons = document.querySelectorAll(".nav-btn");
 const sections = document.querySelectorAll(".app-section");
 const notiBadge = document.getElementById("notiBadge");
 
-// mobile menu toggle (simple)
 const mobileToggle = document.getElementById("mobileMenuToggle");
 if (mobileToggle) {
   mobileToggle.addEventListener("click", () => {
@@ -30,7 +28,6 @@ navButtons.forEach(btn => {
   });
 });
 
-// ----- Datos iniciales -----
 let videos = JSON.parse(localStorage.getItem("videos")) || [];
 let notificaciones = JSON.parse(localStorage.getItem("notificaciones")) || [];
 
@@ -39,11 +36,10 @@ const btnLikes = document.querySelectorAll(".btn-like");
 
 btnLikes.forEach(btn => {
   btn.addEventListener("click", () => {
-    // Animación “pop”
     btn.classList.add("pop");
     setTimeout(() => btn.classList.remove("pop"), 400);
 
-    // Cambiar color al presionar
+
     btn.classList.toggle("liked");
 
     // Actualizar contador si tienes
@@ -56,8 +52,6 @@ btnLikes.forEach(btn => {
         countEl.textContent = current - 1;
       }
     }
-
-    // Guardar estado en localStorage si quieres persistencia
   });
 });
 
