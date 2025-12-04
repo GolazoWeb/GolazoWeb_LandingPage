@@ -12,6 +12,7 @@
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 30px; /* espacio con el formulario */
   text-align: center;
+}
 
 .upload-form {
   display: flex;
