@@ -60,7 +60,6 @@ function renderMisVideos() {
   if (!container) return;
   container.innerHTML = "";
 
-  // Obtener valores de filtro
   const searchText = buscarMiVideo?.value.trim().toLowerCase() || "";
   const fechaFilter = filtrarFecha?.value || "";
 
@@ -71,7 +70,6 @@ function renderMisVideos() {
     return matchesTitle && matchesDate;
   });
 
-  // Renderizar
   filteredVideos.forEach((video, index) => {
     const videoCard = document.createElement("div");
     videoCard.classList.add("video-card");
@@ -94,6 +92,5 @@ function renderMisVideos() {
   localStorage.setItem("misVideosData", JSON.stringify(misVideosData));
 }
 
-// Escuchar cambios en inputs
 buscarMiVideo?.addEventListener("input", renderMisVideos);
 filtrarFecha?.addEventListener("change", renderMisVideos);
