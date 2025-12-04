@@ -1,13 +1,9 @@
-/* ==============================
-   SECCIÓN MIS PUBLICACIONES
-============================== */
 #publicaciones {
   padding: 40px 20px;
   background-color: #f5f5f5;
   min-height: 100vh;
 }
 
-/* Título */
 #publicaciones h2 {
   font-size: 2rem;
   font-weight: 700;
@@ -16,7 +12,6 @@
   text-align: left;
 }
 
-/* Filtros */
 #publicaciones .filter-row {
   display: flex;
   gap: 15px;
@@ -33,14 +28,12 @@
   max-width: 250px;
 }
 
-/* Contenedor de videos */
 #misVideos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
 }
 
-/* Tarjeta de video o imagen */
 #misVideos .video-card {
   background-color: #fff;
   border-radius: 12px;
@@ -56,7 +49,6 @@
   box-shadow: 0 8px 18px rgba(0,0,0,0.12);
 }
 
-/* Video o imagen */
 #misVideos .video-card video,
 #misVideos .video-card img {
   width: 100%;
@@ -64,7 +56,6 @@
   object-fit: cover;
 }
 
-/* Información del video */
 #misVideos .video-info {
   padding: 12px 15px;
   font-family: "Roboto", sans-serif;
@@ -97,9 +88,6 @@
   background-color: #e60000;
 }
 
-/* ==============================
-   VALIDACIONES PARA PUBLICACIONES
-============================== */
 #misVideos .error-msg {
   color: #ff4d4d;
   font-size: 0.85rem;
