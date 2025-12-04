@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GolazoWeb</title>
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="assets/styles/home.css">
@@ -16,7 +15,7 @@
 </head>
 <body>
 
-  <!-- LEFT SIDEBAR / HEADER -->
+  <!-- sidebar-->
   <aside class="sidebar" role="navigation" aria-label="Navegación principal">
     <a class="brand" href="#" title="GolazoWEB">
       <img src="assets/images/logo.jpg" alt="Logo GolazoWEB">
@@ -45,10 +44,8 @@
       </button>
     </nav>
   </aside>
-
-  <!-- MAIN CONTENT -->
+  
   <main class="main-area">
-    <!-- topbar for mobile or smaller screens -->
     <header class="topbar-mobile">
       <div class="brand-mobile">
         <img src="assets/images/logo.png" alt="Logo">
@@ -61,7 +58,7 @@
 
     <div class="container">
 
-      <!-- INICIO -->
+      <!-- inicio -->
       <section id="inicio" class="app-section active" aria-labelledby="title-inicio">
         <div class="hero">
           <div class="hero-header">
@@ -70,7 +67,7 @@
           </div>
 
           <div id="playersContainer" class="players-list">
-            <!-- Deportista 1 -->
+            
             <div class="player-card">
               <img src="assets/images/Juan.jpg" alt="Juan Pérez">
               <div class="player-info">
@@ -78,7 +75,7 @@
                 <span class="validation-badge">120 validaciones</span>
               </div>
             </div>
-            <!-- Deportista 2 -->
+            
             <div class="player-card">
               <img src="assets/images/mateo.webp" alt="Carlos Díaz">
               <div class="player-info">
@@ -86,7 +83,7 @@
                 <span class="validation-badge">98 validaciones</span>
               </div>
             </div>
-            <!-- Deportista 3 -->
+            
             <div class="player-card">
               <img src="assets/images/mario.avif" alt="Mario Silva">
               <div class="player-info">
@@ -94,7 +91,7 @@
                 <span class="validation-badge">87 validaciones</span>
               </div>
             </div>
-            <!-- Deportista 4 -->
+            
             <div class="player-card">
               <img src="assets/images/luisa.webp" alt="Luis Mendoza">
               <div class="player-info">
@@ -102,7 +99,7 @@
                 <span class="validation-badge">75 validaciones</span>
               </div>
             </div>
-            <!-- Deportista 5 -->
+
             <div class="player-card">
               <img src="assets/images/pedrito.avif" alt="Pedro Rojas">
               <div class="player-info">
@@ -112,7 +109,6 @@
             </div>
           </div>
 
-          <!-- RECOMENDACIONES PARA TI -->
           <div class="recommendations">
             <h3>Recomendaciones para ti</h3>
             <div id="recommendationsList" class="videos-grid">
@@ -135,7 +131,7 @@
                   </button>
                 </div>
               </div>
-              <!-- CARD 2 -->
+
               <div class="recommend-card">
                 <img src="assets/images/salto.webp" alt="Técnica de salto vertical" />
                 <h4>Técnica de salto vertical</h4>
@@ -154,7 +150,7 @@
                   </button>
                 </div>
               </div>
-              <!-- CARD 3 -->
+
               <div class="recommend-card">
                 <img src="assets/images/controlbalon.png" alt="Control de balón avanzado" />
                 <h4>Control de balón avanzado</h4>
@@ -173,7 +169,7 @@
                   </button>
                 </div>
               </div>
-              <!-- CARD 4 -->
+
               <div class="recommend-card">
                 <img src="assets/images/agilidad.jpeg" alt="Rutina de agilidad profesional" />
                 <h4>Rutina de agilidad profesional</h4>
@@ -197,9 +193,7 @@
         </div>
       </section>
 
-<!-- ==============================
-     SECCIÓN SUBIR VIDEO
-============================== -->
+<!-- SECCIÓN SUBIR VIDEO -->
 <section id="subir" class="app-section" aria-labelledby="title-subir">
   <h2 id="title-subir">Sube una publicación</h2>
 
@@ -226,9 +220,6 @@
   </form>
 </section>
 
-<!-- ==============================
-     MODAL DE CONFIRMACIÓN
-============================== -->
 <div id="uploadModal" class="modal">
   <div class="modal-content">
     <h3>Confirma tu video</h3>
@@ -251,7 +242,7 @@
       <section id="deportistas" class="app-section" aria-labelledby="title-deportistas">
         <h2 id="title-deportistas">Ver jugadores</h2>
         <div id="videosDeportistas" class="videos-grid" aria-live="polite"></div>
-        <!-- MODAL DE PERFIL DE DEPORTISTA -->
+
 <div id="perfilModal" class="custom-modal">
   <div class="modal-content">
     <span id="closePerfilModal" class="close-btn">&times;</span>
@@ -337,10 +328,8 @@
 
   <div class="profile-card" style="display:flex; flex-direction:column; align-items:center; background:#fff; padding:25px; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.1); max-width:500px; margin:0 auto; gap:16px;">
     
-    <!-- Avatar -->
     <img class="avatar" src="assets/images/carlos.jpg" alt="Avatar usuario" style="width:150px; height:150px; border-radius:50%; border:3px solid #4CAF50;">
 
-    <!-- Información principal -->
     <div class="profile-info" style="text-align:center;">
       <p style="font-size:1.3rem; margin:6px 0;"><strong>Nombre:</strong> Fernando Sanchez</p>
       <p style="font-size:1rem; margin:6px 0;"><strong>Descripción:</strong> <span id="perfilDescripcion">Apasionado del deporte y fanático de los entrenamientos funcionales. Siempre buscando mejorar mis habilidades y compartir mis experiencias.</span></p>
@@ -348,7 +337,6 @@
       <p style="font-size:1rem; margin:6px 0;"><strong>Validaciones:</strong> <span id="countValidaciones">3</span></p>
     </div>
 
-    <!-- Estadísticas y logros -->
     <div class="profile-stats" style="background:#f5f7f8; padding:16px; border-radius:12px; width:100%; display:flex; flex-direction:column; gap:10px;">
       <p><strong>Estadísticas y logros:</strong></p>
       <p>• Total de horas entrenadas este mes: 24h</p>
@@ -357,7 +345,6 @@
       <p>• Videos más vistos: 2</p>
     </div>
 
-    <!-- Botones de acción -->
     <div class="profile-actions" style="margin-top:10px; display:flex; flex-direction:column; gap:12px; width:100%;">
       <button style="padding:12px 0; border:none; border-radius:8px; background:#4CAF50; color:#fff; cursor:pointer; font-weight:600;">Editar Perfil</button>
       <button 
@@ -369,12 +356,10 @@
 
   </div>
 </section>
-
-  <!-- JS -->
   <script src="assets/scripts/home.js"></script>
   <script src="assets/scripts/SubirVideo.js"></script>
-    <script src="assets/scripts/deportista.js"></script>
-    <script src="assets/scripts/publicaciones.js"></script>
-    <script src="assets/scripts/notificacion.js"></script>
+  <script src="assets/scripts/deportista.js"></script>
+  <script src="assets/scripts/publicaciones.js"></script>
+  <script src="assets/scripts/notificacion.js"></script>
 </body>
 </html>
