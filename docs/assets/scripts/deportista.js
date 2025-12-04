@@ -1,6 +1,3 @@
-// -----------------------
-// DATOS DEPORTISTAS
-// -----------------------
 const deportistasData = [
   { nombre: "Juan Pérez", foto: "assets/images/Juan.jpg", validaciones: 120, peso: 75, edad: 24, publicaciones: 12 },
   { nombre: "Mateo Díaz", foto: "assets/images/mateo.webp", validaciones: 98, peso: 68, edad: 22, publicaciones: 8 },
@@ -9,9 +6,6 @@ const deportistasData = [
   { nombre: "Pedro Rojas", foto: "assets/images/pedrito.avif", validaciones: 66, peso: 70, edad: 25, publicaciones: 9 }
 ];
 
-// -----------------------
-// RENDERIZAR DEPORTISTAS
-// -----------------------
 function renderDeportistas(container) {
   if (!container) return;
 
@@ -42,9 +36,6 @@ function renderDeportistas(container) {
   });
 }
 
-// -----------------------
-// MODAL PERFIL
-// -----------------------
 const perfilModal = document.getElementById("perfilModal");
 const closePerfilModal = document.getElementById("closePerfilModal");
 const cerrarPerfilBtn = document.getElementById("cerrarPerfilBtn");
@@ -72,9 +63,6 @@ function cerrarModal() {
 closePerfilModal.onclick = cerrarModal;
 cerrarPerfilBtn.onclick = cerrarModal;
 
-// -----------------------
-// INICIALIZACIÓN
-// -----------------------
 document.addEventListener("DOMContentLoaded", () => {
   renderDeportistas(document.getElementById("videosDeportistas"));
 });
